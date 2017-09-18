@@ -1,0 +1,148 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Article Management | slim with riot js",
+		"_postman_id": "d08d8f27-2f35-7479-d50e-58c3d37cc1a7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"url": {
+					"raw": "http://slim-api.rian.cloud/api/:id",
+					"protocol": "http",
+					"host": [
+						"slim-api",
+						"rian",
+						"cloud"
+					],
+					"path": [
+						"api",
+						":id"
+					],
+					"query": [],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n \t\"title\": \"Jonru UU ITE\",\n    \"content\" : \"Jonru dilaporkan kepolisian karena melanggar UU ITE\"\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"url": "http://slim-api.rian.cloud/api/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n \t\"title\": \"Jonru UU ITE\",\n    \"content\" : \"Jonru dilaporkan kepolisian karena melanggar UU ITE\"\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"url": {
+					"raw": "http://slim-api.rian.cloud/api/:id",
+					"protocol": "http",
+					"host": [
+						"slim-api",
+						"rian",
+						"cloud"
+					],
+					"path": [
+						"api",
+						":id"
+					],
+					"query": [],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n \t\"title\": \"Jonru UU ITE\",\n    \"content\" : \"Jonru dilaporkan kepolisian karena melanggar UU ITE\"\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"url": {
+					"raw": "http://slim-api.rian.cloud/api/:id",
+					"protocol": "http",
+					"host": [
+						"slim-api",
+						"rian",
+						"cloud"
+					],
+					"path": [
+						"api",
+						":id"
+					],
+					"query": [],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n \t\"title\": \"Jonru UU ITE\",\n    \"content\" : \"Jonru dilaporkan kepolisian karena melanggar UU ITE\"\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
